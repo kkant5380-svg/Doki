@@ -1,1 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black">
 
+    <LinearLayout
+        android:id="@+id/ai_api_key_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A1A2E"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="API key required to use AI features"
+            android:textColor="#FFCC00"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/ai_api_key_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Key"
+            android:textColor="#6200EE"
+            android:textStyle="bold"
+            android:paddingStart="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ai_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/ai_chat_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" />
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/ai_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:indeterminate="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#1A1A1A">
+
+        <EditText
+            android:id="@+id/ai_input_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a command..."
+            android:textColorHint="#888888"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#444444"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:imeOptions="actionSend"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/ai_send_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_arrow_forward"
+            android:background="#6200EE"
+            android:tint="@android:color/white"
+            android:contentDescription="Send" />
+    </LinearLayout>
+</LinearLayout>
