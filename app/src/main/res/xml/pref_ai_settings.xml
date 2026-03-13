@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/ai_setup">
+
+        <Preference
+            android:key="ai_api_key_setup"
+            android:title="@string/ai_api_key_title"
+            android:icon="@drawable/ic_auth_key_large" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/ai_features">
+
+        <Preference
+            android:key="ai_chat"
+            android:title="@string/ai_chat_title"
+            android:summary="@string/ai_chat_summary"
+            android:icon="@drawable/ic_bot_large" />
+
+        <Preference
+            android:key="ai_library"
+            android:title="@string/ai_library_title"
+            android:summary="@string/ai_library_summary"
+            android:icon="@drawable/ic_bookmark" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/ai_advanced">
+
+        <Preference
+            android:key="ai_clear_cache"
+            android:title="@string/ai_clear_cache"
+            android:summary="@string/ai_clear_cache_summary" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

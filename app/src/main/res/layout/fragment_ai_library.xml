@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Buttons row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/ai_library_scan_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="🔍 Scan Duplicates" />
+
+        <Button
+            android:id="@+id/ai_library_summary_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📚 Summary" />
+    </LinearLayout>
+
+    <!-- Status message -->
+    <TextView
+        android:id="@+id/ai_library_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:background="#1A1A2E"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Progress -->
+    <ProgressBar
+        android:id="@+id/ai_library_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:indeterminate="true" />
+
+    <!-- Empty state -->
+    <TextView
+        android:id="@+id/ai_library_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap 'Scan Duplicates' to check your library"
+        android:textColor="#888888"
+        android:gravity="center"
+        android:padding="32dp"
+        android:textSize="14sp" />
+
+    <!-- Duplicates list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ai_library_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+</LinearLayout>

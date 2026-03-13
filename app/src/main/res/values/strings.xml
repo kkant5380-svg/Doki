@@ -907,4 +907,20 @@
     <string name="download_default_directory">Default directory for downloading manga</string>
     <string name="private_app_directory_warning">This directory with all data will be deleted if you uninstall the application</string>
     <string name="available_pattern">%1$s available</string>
+    <!-- AI Assistant -->
+    <string name="ai_assistant">AI Assistant</string>
+    <string name="ai_setup">Setup</string>
+    <string name="ai_features">Features</string>
+    <string name="ai_advanced">Advanced</string>
+    <string name="ai_api_key_title">Gemini API Key</string>
+    <string name="ai_api_key_message">Get your free key from aistudio.google.com</string>
+    <string name="ai_api_key_set">API key is set - AI features enabled</string>
+    <string name="ai_api_key_not_set">Tap to set your API key and enable AI</string>
+    <string name="ai_chat_title">Smart Assistant</string>
+    <string name="ai_chat_summary">Control settings with natural language</string>
+    <string name="ai_library_title">Library Manager</string>
+    <string name="ai_library_summary">Detect and remove duplicate manga</string>
+    <string name="ai_clear_cache">Clear AI Cache</string>
+    <string name="ai_clear_cache_summary">Clears cached AI responses</string>
+    <string name="ai_cache_cleared">Cache cleared!</string>
 </resources>

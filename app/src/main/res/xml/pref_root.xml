@@ -51,6 +51,12 @@
         android:title="@string/backup_restore" />
 
     <PreferenceScreen
+        android:fragment="org.dokiteam.doki.ai.ui.AiSettingsFragment"
+        android:icon="@drawable/ic_bot_large"
+        android:key="ai_assistant"
+        android:title="@string/ai_assistant" />
+
+    <PreferenceScreen
         android:fragment="org.dokiteam.doki.settings.about.AboutSettingsFragment"
         android:icon="@drawable/ic_info_outline"
         android:key="about"
